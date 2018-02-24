@@ -1,0 +1,18 @@
+{
+    "short_name": "Lagnesh",
+    "name": "Lagnesh Thakur | Portfolio",
+    "start_url": "/",
+
+    "theme_color": "#3f51b5",
+    "background_color": "#3d538c",
+
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/assets/images/icons/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ]
+}
