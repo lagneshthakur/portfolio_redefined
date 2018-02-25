@@ -7,6 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  projects = [
+    {
+    'name' : 'My Project',
+    'year' : 2018,
+    'description': 'Project description placeholder'
+    },
+    {
+    'name' : 'My Project',
+    'year' : 2018,
+    'description': 'Project description placeholder'
+    },
+    {
+    'name' : 'My Project',
+    'year' : 2018,
+    'description': 'Project description placeholder'
+    },
+    {
+    'name' : 'My Project',
+    'year' : 2018,
+    'description': 'Project description placeholder'
+    },
+    {
+    'name' : 'My Project',
+    'year' : 2018,
+    'description': 'Project description placeholder'
+    },
+    {
+    'name' : 'My Project',
+    'year' : 2018,
+    'description': 'Project description placeholder'
+    },
+  ];
+
   constructor() { }
 
   ngOnInit() {
