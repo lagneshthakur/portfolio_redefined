@@ -1,15 +1,15 @@
 
 <br/>
 <div class="row">
-    <div *ngFor = "let project of projects" class="col-lg-4 col-md-6 mb-r">
+    <div *ngFor = "let project of projects; let i = index" [attr.data-index]="i" class="col-lg-4 col-md-6 mb-r">
                         
     <!--Card-->
-    <div class="card card-cascade" style="align-items:center">
+    <div class="card " style="align-items:center">
 
         <!--Card image-->
         <div class="view overlay hm-white-slight">
-            <img src="https://picsum.photos/200/200?image=885" class="circle-image" alt="">
-            <a>
+            <img src="{{project.image}}" style="object-fit: contain; width: 300px; height: 300px" class="card-img-top" alt="">
+            <a href="{{project.link}}">
                 <div class="mask waves-effect waves-light"></div>
             </a>
         </div>
@@ -22,11 +22,11 @@
             <h5>{{project.year}}</h5>
 
             <p class="card-text">
-                {{project.description}}
+                {{project.shortDescription}}
             </p>
-            <!-- <a type="button" class="btn-floating btn-fb waves-effect waves-light">
-                Check it out!
-            </a> -->
+            <button type="button" (click)="goToProjectDetail(i)" class="btn-raised btn-primary btn">
+                {{project.buttonText}}
+            </button>
         </div>
         <!--/.Card content-->
 

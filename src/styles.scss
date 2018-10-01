@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body{
-    font-family: serif
+    font-family: 'Times New Roman', Times, serif
 }
 
 .vertical-center{
@@ -22,4 +22,8 @@ body{
 /* Dirty fix for mdb error */
 i.fa-bars{
     display: none !important;
+}
+
+.header-item{
+    align-items: center
 }

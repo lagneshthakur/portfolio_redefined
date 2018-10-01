@@ -8,6 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { TopnavComponent } from './topnav/topnav.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 @NgModule({
@@ -17,29 +18,34 @@ import { AboutComponent } from './about/about.component';
     ProjectsComponent,
     TopnavComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot([{
-      path : '' , 
+      path : '' ,
       component : HomeComponent
-    }, 
+    },
     {
-      path : 'home' , 
+      path : 'home' ,
       component : HomeComponent
-    }, 
+    },
     {
-      path : 'projects' , 
+      path : 'projects' ,
       component : ProjectsComponent
     },
     {
-      path : 'about' , 
+      path : 'project/:id' ,
+      component : ProjectDetailComponent
+    },
+    {
+      path : 'about' ,
       component : AboutComponent
     },
     {
-      path : 'contact' , 
+      path : 'contact' ,
       component : ContactComponent
     }
   ])

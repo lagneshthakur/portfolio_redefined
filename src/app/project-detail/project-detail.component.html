@@ -1,0 +1,31 @@
+
+<br/>
+<div class="row">                        
+  <!--Card-->
+  <div class="card card-cascade" style="align-items:center; width: 100%">
+      <!--Card image-->
+      <div class="view overlay hm-white-slight">
+          <img src="{{project.image}}" style="object-fit: contain; width: 400px; height: 400px; margin: 5px;" class="card-img" alt="">
+          <a>
+              <div class="mask waves-effect waves-light"></div>
+          </a>
+      </div>
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class="card-body text-center">
+          <!--Title-->
+          <h4 class="card-title"><strong>{{project.name}}</strong></h4>
+          <h5>{{project.year}}</h5>
+
+          <p class="card-text" style="white-space: pre-line">
+              {{project.description}}
+          </p>
+          <a href="{{project.link}}" type="button" class="btn-raised btn-primary btn">
+              See Live
+          </a>
+      </div>
+      <!--/.Card content-->
+  </div>
+  <!--/.Card-->
+</div>

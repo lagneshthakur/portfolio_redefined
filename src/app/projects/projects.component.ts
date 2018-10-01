@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PROJECTS } from '../project';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -7,42 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects = [
-    {
-    'name' : 'My Project',
-    'year' : 2018,
-    'description': 'Project description placeholder'
-    },
-    {
-    'name' : 'My Project',
-    'year' : 2018,
-    'description': 'Project description placeholder'
-    },
-    {
-    'name' : 'My Project',
-    'year' : 2018,
-    'description': 'Project description placeholder'
-    },
-    {
-    'name' : 'My Project',
-    'year' : 2018,
-    'description': 'Project description placeholder'
-    },
-    {
-    'name' : 'My Project',
-    'year' : 2018,
-    'description': 'Project description placeholder'
-    },
-    {
-    'name' : 'My Project',
-    'year' : 2018,
-    'description': 'Project description placeholder'
-    },
-  ];
-
-  constructor() { }
+  projects = PROJECTS;
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goToProjectDetail(projectIndex: number) {
+    this.router.navigate(['/project/' + (projectIndex + 1)]);
   }
 
 }
