@@ -3,7 +3,8 @@ export class Project {
     image: string;
     year: number;
     description: string;
-
+    link: string;
+    buttonText: string;
   }
 export const PROJECTS = [
     {
